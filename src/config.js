@@ -21,7 +21,7 @@ export const navLinks = [
 export const mainViewConfig = {
   heading: '兵庫県伝統工芸',
   text: '三田青磁',
-  image: '/images/sandaseiji2.jpg', // 画像ファイルを差し替えてください
+  image: 'images/sandaseiji2.jpg', // 画像ファイルを差し替えてください
   imageAlt: '三田青磁の写真',
 }
 

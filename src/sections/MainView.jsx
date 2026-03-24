@@ -20,7 +20,8 @@ export default function MainView() {
           </p>
         </div>
         <div className="mainview-image-wrap">
-          <img src={image} alt={imageAlt} className="mainview-image" />
+          <img src={import.meta.env.BASE_URL + image} alt={imageAlt} className="mainview-image" />
+
         </div>
       </div>
     </section>

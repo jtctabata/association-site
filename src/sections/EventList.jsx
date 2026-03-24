@@ -26,7 +26,8 @@ function EventCard({ event }) {
       {/* 画像エリア：画像なしの場合は非表示 */}
       {image && (
         <div className="event-card-image-wrap">
-          <img src={image} alt={title} className="event-card-image" />
+          <img src={import.meta.env.BASE_URL + image} alt={title} className="event-card-image" />
+
         </div>
       )}
       <div className="event-card-body">

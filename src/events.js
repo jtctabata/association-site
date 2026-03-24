@@ -8,7 +8,7 @@
 const events = [
   //{
   //  id: 1,
-  //  image: '/images/event1.jpg', // null にするとカード・詳細ページで画像エリア非表示
+  //  image: 'images/event1.jpg', // null にするとカード・詳細ページで画像エリア非表示
   //  eventDate: '2025年7月20日（日）10:00〜16:00',
   //  title: '夏季文化交流フォーラム2025',
   //  excerpt:

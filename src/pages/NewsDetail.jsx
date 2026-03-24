@@ -26,12 +26,8 @@ export default function NewsDetail() {
           {/* 左カラム：画像（画像なしの場合は非表示） */}
           {item.image && (
             <div className="detail-image-col">
-              <img
-                src={item.image}
-                alt={item.title}
-                className="detail-thumb"
-                onClick={() => setModalOpen(true)}
-              />
+              <img src={import.meta.env.BASE_URL + item.image} alt={item.title} className="detail-thumb" onClick={() => setModalOpen(true)} />
+
               <p className="detail-image-hint">クリックで拡大</p>
             </div>
           )}
@@ -55,7 +51,8 @@ export default function NewsDetail() {
 
       {/* 画像モーダル */}
       {modalOpen && (
-        <Modal src={item.image} alt={item.title} onClose={() => setModalOpen(false)} />
+        <Modal src={import.meta.env.BASE_URL + item.image} alt={item.title} onClose={() => setModalOpen(false)} />
+
       )}
     </div>
   )
