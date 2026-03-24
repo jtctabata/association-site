@@ -6,8 +6,7 @@ export default function MainView() {
 
   return (
     <section className="mainview">
-      <div className="mainview-inner inner">
-        {/* SP：画像が先に来るため order で制御 */}
+      <div className="mainview-inner">        {/* SP：画像が先に来るため order で制御 */}
         <div className="mainview-text">
           <h2 className="mainview-heading">
             {heading.split('\n').map((line, i) => (

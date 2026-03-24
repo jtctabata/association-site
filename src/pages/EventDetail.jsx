@@ -52,7 +52,7 @@ export default function EventDetail() {
         </div>
 
         <div className="detail-back">
-          <Link to="/#events" className="back-link">← イベント一覧へ戻る</Link>
+          <Link to="/" className="back-link">← イベント一覧へ戻る</Link>
         </div>
       </div>
 

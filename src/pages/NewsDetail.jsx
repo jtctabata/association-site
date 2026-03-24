@@ -49,7 +49,7 @@ export default function NewsDetail() {
         </div>
 
         <div className="detail-back">
-          <Link to="/#news" className="back-link">← ニュース一覧へ戻る</Link>
+          <Link to="/" className="back-link">← ニュース一覧へ戻る</Link>
         </div>
       </div>
 

@@ -10,7 +10,17 @@ export default function About() {
           {aboutConfig.rows.map((row) => (
             <div key={row.label} className="about-row">
               <dt className="about-label">{row.label}</dt>
-              <dd className="about-value">{row.value}</dd>
+              <dd className="about-value">
+                {Array.isArray(row.value) ? (
+                  <ul className="about-list">
+                    {row.value.map((item, i) => (
+                      <li key={i}>{item}</li>
+                    ))}
+                  </ul>
+                ) : (
+                  row.value
+                )}
+              </dd>
             </div>
           ))}
         </dl>
